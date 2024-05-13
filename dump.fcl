@@ -13,17 +13,19 @@ services:
    # https://github.com/DUNE/dunecore/tree/develop/dunecore/Utilities
    #@table::dunefddphase_simulation_services #dual-phase simulation services (same plane naming, XYZ)
    #@table::dunefdvd_1x8x6_3view_simulation_services
-   @table::dunefdvd_1x8x14_3view_simulation_services
+   #@table::dunefdvd_1x8x14_3view_simulation_services
    #@table::dunefdvd_1x8x6_3view_30deg_simulation_services
    #@table::dunefdvd_1x8x14_3view_30deg_simulation_services
+   @table::dunefd_simulation_services
 }
 ### Use the 1x2x6 geometry ###
 #services.Geometry: @local::dune10kt_1x2x6_geo
 ### Use the vertical drift geometry
 #services.Geometry: @local::dunevd10kt_1x8x6_3view_geo
-services.Geometry: @local::dunevd10kt_1x8x14_3view_geo
+#services.Geometry: @local::dunevd10kt_1x8x14_3view_geo
 #services.Geometry: @local::dunevd10kt_1x8x6_3view_30deg_geo
 #services.Geometry: @local::dunevd10kt_1x8x14_3view_30deg_geo
+services.Geometry: @local::dune10kt_v7_geo
 #source:
 #{
 #  module_type: RootInput

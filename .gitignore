@@ -1,0 +1,7 @@
+archive
+gdml-dump
+gdml
+*.txt
+dune*.fcl
+log*
+*.log
